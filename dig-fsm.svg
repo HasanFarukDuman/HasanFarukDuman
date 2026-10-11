@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="800" viewBox="0 0 820 400" role="img" aria-label="cmd_handler state machine: IDLE moves to WAIT_FREQ when a waveform letter or T arrives; from WAIT_FREQ the next byte leads either to SET_CMD, which builds the 16-bit command and pulses cmd_ready, or to SET_TX, which loads tx_data and pulses tx_send once the transmitter is idle; both return to IDLE.">
+            <style>
+.d-box{fill:#fff;stroke:#16212A;stroke-width:1.4}
+.d-hi{fill:#F3E3D8;stroke:#A9501C;stroke-width:1.6}
+.d-line{fill:none;stroke:#16212A;stroke-width:1.4}
+.d-acc{fill:none;stroke:#A9501C;stroke-width:2}
+.d-dash{fill:none;stroke:#586773;stroke-width:1.2;stroke-dasharray:4 4}
+.d-name{fill:#16212A;font:600 14px "IBM Plex Mono",Menlo,Consolas,"DejaVu Sans Mono",monospace}
+.d-sub{fill:#586773;font:400 12px "IBM Plex Mono",Menlo,Consolas,"DejaVu Sans Mono",monospace}
+.d-lbl{fill:#16212A;font:400 11.5px "IBM Plex Mono",Menlo,Consolas,"DejaVu Sans Mono",monospace}
+.d-head{fill:#16212A}.d-head-acc{fill:#A9501C}
+</style><rect x="0" y="0" width="820" height="400" fill="#fff"/><defs>
+              <marker id="fh" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-head"/></marker>
+              <marker id="fha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-head-acc"/></marker>
+            </defs>
+            <!-- reset -->
+            <line x1="250" y1="58" x2="328" y2="58" class="d-line" marker-end="url(#fh)"/>
+            <text x="244" y="62" text-anchor="end" class="d-lbl">rst</text>
+            <!-- states -->
+            <rect x="330" y="34" width="160" height="48" rx="24" class="d-box"/>
+            <rect x="335" y="39" width="150" height="38" rx="19" class="d-line"/>
+            <text x="410" y="63" text-anchor="middle" class="d-name">IDLE</text>
+
+            <rect x="330" y="170" width="160" height="48" rx="24" class="d-box"/>
+            <text x="410" y="199" text-anchor="middle" class="d-name">WAIT_FREQ</text>
+
+            <rect x="90" y="300" width="190" height="56" rx="28" class="d-hi"/>
+            <text x="185" y="324" text-anchor="middle" class="d-name">SET_CMD</text>
+            <text x="185" y="342" text-anchor="middle" class="d-sub">cmd ← {mode, code}</text>
+
+            <rect x="540" y="300" width="190" height="56" rx="28" class="d-hi"/>
+            <text x="635" y="324" text-anchor="middle" class="d-name">SET_TX</text>
+            <text x="635" y="342" text-anchor="middle" class="d-sub">tx_data ← rx_data</text>
+
+            <!-- IDLE self loop -->
+            <path d="M490,50 C560,20 560,96 492,68" class="d-dash" marker-end="url(#fh)"/>
+            <text x="566" y="54" class="d-lbl">other byte</text><text x="566" y="69" class="d-sub">ignored</text>
+
+            <!-- IDLE -> WAIT_FREQ -->
+            <line x1="410" y1="82" x2="410" y2="168" class="d-acc" marker-end="url(#fha)"/>
+            <text x="398" y="118" text-anchor="end" class="d-lbl">rx_data ∈ {'A','B','C','T'}</text>
+            <text x="398" y="134" text-anchor="end" class="d-sub">latch mode ← rx_data</text>
+
+            <!-- WAIT_FREQ -> SET_CMD -->
+            <path d="M350,212 C300,250 230,262 200,298" class="d-acc" marker-end="url(#fha)"/>
+            <text x="396" y="262" text-anchor="end" class="d-lbl">mode ∈ {A,B,C}</text>
+            <text x="396" y="277" text-anchor="end" class="d-sub">code ← map_baudrate()</text>
+
+            <!-- WAIT_FREQ -> SET_TX -->
+            <path d="M470,212 C520,250 590,262 620,298" class="d-acc" marker-end="url(#fha)"/>
+            <text x="478" y="262" class="d-lbl">mode = 'T'</text>
+
+            <!-- SET_TX self loop (busy) -->
+            <path d="M730,318 C800,300 800,360 732,342" class="d-dash" marker-end="url(#fh)"/>
+            <text x="772" y="380" text-anchor="middle" class="d-lbl">tx_active</text>
+            <text x="772" y="394" text-anchor="middle" class="d-sub">wait</text>
+
+            <!-- returns to IDLE -->
+            <path d="M90,328 C20,328 20,58 328,58" class="d-line" marker-end="url(#fh)" transform="translate(0,0)"/>
+            <text x="34" y="170" class="d-lbl" transform="rotate(-90 34 170)" text-anchor="middle">cmd_ready = 1 · one clk</text>
+            <path d="M730,328 C780,250 640,100 492,64" class="d-line" marker-end="url(#fh)"/>
+            <text x="696" y="196" text-anchor="end" class="d-lbl">¬tx_active</text>
+            <text x="696" y="211" text-anchor="end" class="d-sub">tx_send = 1 · one clk</text>
+          </svg>
