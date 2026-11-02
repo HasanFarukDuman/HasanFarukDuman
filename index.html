@@ -407,7 +407,6 @@ ol.seq code { color: var(--accent); }
 </head>
 <body>
 
-
 <div class="wrap layout">
   <aside class="rail" aria-label="Page index">
     <div class="who">Hasan Faruk Duman<span>Electronics Engineer</span></div>
@@ -419,17 +418,18 @@ ol.seq code { color: var(--accent); }
       <div>
         <h4>Hardware &amp; embedded</h4>
         <ol>
-          <li><a href="#bldc"><span class="n">P2</span>BLDC motor driver</a></li>
-          <li><a href="#fcc"><span class="n">P3</span>Rocket flight computer</a></li>
-          <li><a href="#lcd"><span class="n">P4</span>I²C LCD driver library</a></li>
-          <li><a href="#power"><span class="n">P7</span>Buck converter &amp; induction heater</a></li>
+          <li><a href="#fc6"><span class="n">P2</span>6-layer UAV flight controller</a></li>
+          <li><a href="#bldc"><span class="n">P3</span>BLDC motor driver</a></li>
+          <li><a href="#fcc"><span class="n">P4</span>Rocket flight computer</a></li>
+          <li><a href="#lcd"><span class="n">P5</span>I²C LCD driver library</a></li>
+          <li><a href="#power"><span class="n">P8</span>Buck converter &amp; induction heater</a></li>
         </ol>
       </div>
       <div>
         <h4>RF &amp; wireless</h4>
         <ol>
-          <li><a href="#sdr"><span class="n">P5</span>UAV SDR interference mapping</a></li>
-          <li><a href="#rfdt"><span class="n">P6</span>Propagation modeling tool</a></li>
+          <li><a href="#sdr"><span class="n">P6</span>UAV SDR interference mapping</a></li>
+          <li><a href="#rfdt"><span class="n">P7</span>Propagation modeling tool</a></li>
         </ol>
       </div>
       <div>
@@ -470,12 +470,13 @@ ol.seq code { color: var(--accent); }
           <thead><tr><th scope="col">Project</th><th scope="col">RTL / FPGA</th><th scope="col">PCB &amp; power</th><th scope="col">Embedded FW</th><th scope="col">RF &amp; signals</th></tr></thead>
           <tbody>
             <tr><td><a href="#wavegen">P1 · UART-controlled waveform generator → SPI DAC</a><span class="ctx">Milli Teknoloji Akademisi · 2025</span></td><td><span class="dot" title="Primary"></span></td><td></td><td></td><td></td></tr>
-            <tr><td><a href="#bldc">P2 · 24 V / 60 A sensorless BLDC motor driver</a><span class="ctx">ULUTOGAN UAV · TEKNOFEST 2025</span></td><td></td><td><span class="dot" title="Primary"></span></td><td><span class="dot" title="Primary"></span></td><td></td></tr>
-            <tr><td><a href="#fcc">P3 · ESP32 flight control computer</a><span class="ctx">SANCAR Rocket · TEKNOFEST 2025</span></td><td></td><td><span class="dot" title="Primary"></span></td><td><span class="dot" title="Primary"></span></td><td><span class="dot half" title="Supporting"></span></td></tr>
-            <tr><td><a href="#lcd">P4 · PCF8574 I²C driver for a 16×2 LCD</a><span class="ctx">RİTOS Elektronik · Boardoza M032 · 2025</span></td><td></td><td></td><td><span class="dot" title="Primary"></span></td><td></td></tr>
-            <tr><td><a href="#sdr">P5 · UAV-mounted PlutoSDR interference mapping</a><span class="ctx">TÜBİTAK 2209-A · published</span></td><td></td><td></td><td><span class="dot half" title="Supporting"></span></td><td><span class="dot" title="Primary"></span></td></tr>
-            <tr><td><a href="#rfdt">P6 · Drive-test propagation modeling tool</a><span class="ctx">ONS Group A.Ş. · 2025</span></td><td></td><td></td><td><span class="dot half" title="Supporting"></span></td><td><span class="dot" title="Primary"></span></td></tr>
-            <tr><td><a href="#power">P7 · 4-layer buck converter · induction heater</a><span class="ctx">RİTOS Elektronik · 2025</span></td><td></td><td><span class="dot" title="Primary"></span></td><td></td><td></td></tr>
+            <tr><td><a href="#fc6">P2 · 6-layer ESP32-S3 fixed-wing flight controller</a><span class="ctx">Personal project · 2026 · Rev A layout</span></td><td></td><td><span class="dot" title="Primary"></span></td><td><span class="dot half" title="Supporting"></span></td><td><span class="dot half" title="Supporting"></span></td></tr>
+            <tr><td><a href="#bldc">P3 · 24 V / 60 A sensorless BLDC motor driver</a><span class="ctx">ULUTOGAN UAV · TEKNOFEST 2025</span></td><td></td><td><span class="dot" title="Primary"></span></td><td><span class="dot" title="Primary"></span></td><td></td></tr>
+            <tr><td><a href="#fcc">P4 · ESP32 flight control computer</a><span class="ctx">SANCAR Rocket · TEKNOFEST 2025</span></td><td></td><td><span class="dot" title="Primary"></span></td><td><span class="dot" title="Primary"></span></td><td><span class="dot half" title="Supporting"></span></td></tr>
+            <tr><td><a href="#lcd">P5 · PCF8574 I²C driver for a 16×2 LCD</a><span class="ctx">RİTOS Elektronik · Boardoza M032 · 2025</span></td><td></td><td></td><td><span class="dot" title="Primary"></span></td><td></td></tr>
+            <tr><td><a href="#sdr">P6 · UAV-mounted PlutoSDR interference mapping</a><span class="ctx">TÜBİTAK 2209-A · published</span></td><td></td><td></td><td><span class="dot half" title="Supporting"></span></td><td><span class="dot" title="Primary"></span></td></tr>
+            <tr><td><a href="#rfdt">P7 · Drive-test propagation modeling tool</a><span class="ctx">ONS Group A.Ş. · 2025</span></td><td></td><td></td><td><span class="dot half" title="Supporting"></span></td><td><span class="dot" title="Primary"></span></td></tr>
+            <tr><td><a href="#power">P8 · 4-layer buck converter · induction heater</a><span class="ctx">RİTOS Elektronik · 2025</span></td><td></td><td><span class="dot" title="Primary"></span></td><td></td><td></td></tr>
           </tbody>
         </table>
       </div>
@@ -668,9 +669,134 @@ ol.seq code { color: var(--accent); }
       <ul class="tags"><li>Verilog</li><li>FSM design</li><li>UART</li><li>SPI</li><li>Clock division</li><li>Testbench</li><li>GTKWave</li><li>Yosys</li><li>OpenLANE</li></ul>
     </article>
 
-    <!-- ================= P2 BLDC ================= -->
+    <!-- ================= P2 6-LAYER FLIGHT CONTROLLER ================= -->
+    <article class="case" id="fc6">
+      <div class="eyebrow"><span class="dom">P2 · PCB design · Power · Embedded hardware</span><span>Personal project · fixed-wing UAV autopilot · 2026 · Rev A layout</span></div>
+      <h2>HEZARFEN: 6-layer ESP32-S3 flight controller for a fixed-wing UAV</h2>
+      <p class="lede">A complete autopilot board in 84 × 36 mm: two IMUs and a barometer, eight servo outputs, two switching regulators fed from the flight battery, current and voltage monitoring, and soldered flash for flight logs. I took it from requirements and a power budget to a 167-part, six-layer layout, and moved it from four to six layers when routing density called for it.</p>
+
+      <div class="spec-grid">
+        <dl class="specs">
+          <div><dt>MCU</dt><dd>ESP32-S3-WROOM-1 · N16R2</dd></div>
+          <div><dt>Inertial</dt><dd>ICM-42688-P + BMI270 (dual IMU, SPI)</dd></div>
+          <div><dt>Barometer</dt><dd>DPS310 · I²C</dd></div>
+          <div><dt>Power monitor</dt><dd>INA226 · 2 × 0.5 mΩ shunts</dd></div>
+          <div><dt>Servo rail</dt><dd>TPS54560B-Q1 · 5.0 V / 5 A</dd></div>
+          <div><dt>Logic rail</dt><dd>TPS54260-Q1 · 5.4 V / 2.5 A → OR → LDOs</dd></div>
+          <div><dt>I/O</dt><dd>8 servo · GPS · TELEM · RC · I²C · USB-C · LED · buzzer · safety switch</dd></div>
+          <div><dt>Logging</dt><dd>4 GB soldered SD NAND · SDMMC</dd></div>
+          <div><dt>Board</dt><dd>84 × 36 mm · 6 layers · 2 oz outer · 167 parts</dd></div>
+          <div><dt>EDA</dt><dd>KiCad · Python (pcbnew) scripted flow</dd></div>
+        </dl>
+        <div class="role"><b>My role</b><p>Defined the system architecture from the requirements and power budget, and selected the parts. Implemented the schematic and the six-layer layout, then analysed the design through DRC, connectivity and layout reviews of each iteration, including stack-up, power integrity and EMI checks.</p></div>
+      </div>
+
+      <div class="gallery two">
+        <figure class="shot"><button type="button" data-full="fc6-3d-top-hz.jpg" data-cap="KiCad 3D render, top: vertical XT60 battery and ESC connectors, ESP32-S3 module with its antenna past the board edge, USB-C, the 8-channel servo header and JST-GH ports for GPS, telemetry, RC, I²C and the safety switch. The sensor block sits between the mounting holes: ICM-42688-P main IMU at the centre, BMI270 backup IMU and DPS310 barometer beside it. The winged Galata Tower emblem marks the board as HEZARFEN."><img src="fc6-3d-top-hz.jpg" alt="3D render of the flight controller, top side" class="contain"></button><figcaption>Top: XT60 power entry, ESP32-S3, USB-C, servo header, JST-GH ports, and the sensors: ICM-42688-P and BMI270 IMUs plus the DPS310 barometer.</figcaption></figure>
+        <figure class="shot"><button type="button" data-full="fc6-3d-bottom-hz.jpg" data-cap="KiCad 3D render, bottom: logic buck and LDOs along the edge, power monitor and shunts beside the XT60 pins, SD NAND, ESD arrays next to the connectors and a labelled test-point field. The bare antenna strip carries the HEZARFEN name and the designer credit, and a second emblem with 'GALATA · 1632' sits beside the XT60 pins, a nod to Hezarfen Ahmed Çelebi's flight from the Galata Tower."><img src="fc6-3d-bottom-hz.jpg" alt="3D render of the flight controller, bottom side" class="contain"></button><figcaption>Bottom: logic regulators, power monitor, SD NAND, test points and the HEZARFEN mark on the antenna strip.</figcaption></figure>
+      </div>
+
+      <figure class="diagram">
+        <div class="scroll">
+        <svg class="wide" viewBox="0 0 1180 400" role="img" aria-label="Power tree and signal map. The battery enters through an XT60 connector, a shunt measured by the INA226 and a pi filter, then feeds two buck regulators: TPS54560B makes the 5 volt servo rail for eight servo outputs, TPS54260 makes 5.4 volts that is OR-ed with USB power into a 5 volt logic rail. From that rail an AP7361C LDO makes 3.3 volts for the ESP32-S3 and SD NAND, and a TPS7A2033 makes a separate quiet 3.3 volt rail for the sensors. The ESP32-S3 talks SPI to both IMUs, I2C to the barometer and power monitor, SDMMC to the SD NAND, UARTs to GPS, telemetry and RC, PWM to the servos, and USB through an ESD protector to the USB-C connector.">
+          <defs>
+            <marker id="fh" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-head"/></marker>
+            <marker id="fha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-head-acc"/></marker>
+          </defs>
+          <text x="10" y="20" class="d-sub">POWER TREE</text>
+          <rect x="10" y="40" width="110" height="56" rx="6" class="d-ext"/><text x="65" y="64" text-anchor="middle" class="d-name">XT60</text><text x="65" y="81" text-anchor="middle" class="d-sub">flight battery</text>
+          <rect x="160" y="40" width="130" height="56" rx="6" class="d-box"/><text x="225" y="64" text-anchor="middle" class="d-name">Shunt · INA226</text><text x="225" y="81" text-anchor="middle" class="d-sub">V · I sense</text>
+          <rect x="330" y="40" width="110" height="56" rx="6" class="d-box"/><text x="385" y="64" text-anchor="middle" class="d-name">π filter</text><text x="385" y="81" text-anchor="middle" class="d-sub">FB1 + RC damp</text>
+          <line x1="120" y1="68" x2="158" y2="68" class="d-line" marker-end="url(#fh)"/>
+          <line x1="290" y1="68" x2="328" y2="68" class="d-line" marker-end="url(#fh)"/>
+          <rect x="490" y="10" width="150" height="56" rx="6" class="d-hi"/><text x="565" y="34" text-anchor="middle" class="d-name">TPS54560B</text><text x="565" y="51" text-anchor="middle" class="d-sub">buck · 5.0 V / 5 A</text>
+          <rect x="490" y="100" width="150" height="56" rx="6" class="d-hi"/><text x="565" y="124" text-anchor="middle" class="d-name">TPS54260</text><text x="565" y="141" text-anchor="middle" class="d-sub">buck · 5.4 V / 2.5 A</text>
+          <polyline points="440,68 465,68 465,38 488,38" class="d-acc" marker-end="url(#fha)"/>
+          <polyline points="465,68 465,128 488,128" class="d-acc" marker-end="url(#fha)"/>
+          <text x="452" y="114" text-anchor="end" class="d-lbl-acc">VBAT_REG</text>
+          <rect x="690" y="10" width="150" height="56" rx="6" class="d-box"/><text x="765" y="34" text-anchor="middle" class="d-name">Servo rail</text><text x="765" y="51" text-anchor="middle" class="d-sub">JP1 · 8 × servo</text>
+          <line x1="640" y1="38" x2="688" y2="38" class="d-line" marker-end="url(#fh)"/>
+          <rect x="690" y="100" width="150" height="56" rx="6" class="d-box"/><text x="765" y="124" text-anchor="middle" class="d-name">Schottky OR</text><text x="765" y="141" text-anchor="middle" class="d-sub">with USB 5 V</text>
+          <line x1="640" y1="128" x2="688" y2="128" class="d-line" marker-end="url(#fh)"/>
+          <rect x="890" y="80" width="140" height="44" rx="6" class="d-box"/><text x="960" y="100" text-anchor="middle" class="d-name">AP7361C</text><text x="960" y="116" text-anchor="middle" class="d-sub">+3V3 · MCU, flash</text>
+          <rect x="890" y="134" width="140" height="44" rx="6" class="d-box"/><text x="960" y="154" text-anchor="middle" class="d-name">TPS7A2033</text><text x="960" y="170" text-anchor="middle" class="d-sub">+3V3_SENS · quiet</text>
+          <polyline points="840,128 865,128 865,102 888,102" class="d-line" marker-end="url(#fh)"/>
+          <polyline points="865,128 865,156 888,156" class="d-line" marker-end="url(#fh)"/>
+          <text x="1040" y="160" class="d-lbl-acc">IMUs · baro</text>
+          <text x="1040" y="174" class="d-lbl-acc">INA226</text>
+
+          <line x1="10" y1="205" x2="1170" y2="205" class="d-dash"/>
+          <text x="10" y="228" class="d-sub">SIGNALS</text>
+          <rect x="470" y="250" width="200" height="130" rx="8" class="d-hi"/><text x="570" y="300" text-anchor="middle" class="d-name">ESP32-S3</text><text x="570" y="318" text-anchor="middle" class="d-sub">WROOM-1 · 16 MB flash</text><text x="570" y="334" text-anchor="middle" class="d-sub">antenna off board edge</text>
+          <rect x="140" y="236" width="190" height="44" rx="6" class="d-box"/><text x="235" y="256" text-anchor="middle" class="d-name">ICM-42688-P · BMI270</text><text x="235" y="272" text-anchor="middle" class="d-sub">dual IMU · SPI</text>
+          <rect x="140" y="294" width="190" height="44" rx="6" class="d-box"/><text x="235" y="314" text-anchor="middle" class="d-name">DPS310 · INA226</text><text x="235" y="330" text-anchor="middle" class="d-sub">I²C0 bus</text>
+          <rect x="140" y="352" width="190" height="40" rx="6" class="d-box"/><text x="235" y="377" text-anchor="middle" class="d-name">4 GB SD NAND</text>
+          <line x1="330" y1="258" x2="468" y2="280" class="d-acc" marker-start="url(#fha)" marker-end="url(#fha)"/>
+          <line x1="330" y1="316" x2="468" y2="316" class="d-line" marker-start="url(#fh)" marker-end="url(#fh)"/>
+          <line x1="330" y1="372" x2="468" y2="352" class="d-line" marker-start="url(#fh)" marker-end="url(#fh)"/>
+          <text x="400" y="364" text-anchor="middle" class="d-lbl">SDMMC</text>
+          <rect x="820" y="236" width="200" height="44" rx="6" class="d-box"/><text x="920" y="256" text-anchor="middle" class="d-name">GPS · TELEM · RC</text><text x="920" y="272" text-anchor="middle" class="d-sub">UART · ESD at connector</text>
+          <rect x="820" y="294" width="200" height="44" rx="6" class="d-box"/><text x="920" y="314" text-anchor="middle" class="d-name">8 × servo PWM</text><text x="920" y="330" text-anchor="middle" class="d-sub">series R · ESD arrays</text>
+          <rect x="820" y="352" width="200" height="40" rx="6" class="d-box"/><text x="920" y="377" text-anchor="middle" class="d-name">USB-C · USBLC6</text>
+          <line x1="670" y1="280" x2="818" y2="258" class="d-line" marker-start="url(#fh)" marker-end="url(#fh)"/>
+          <line x1="670" y1="316" x2="818" y2="316" class="d-line" marker-end="url(#fh)"/>
+          <line x1="670" y1="352" x2="818" y2="372" class="d-acc" marker-start="url(#fha)" marker-end="url(#fha)"/>
+          <text x="744" y="378" text-anchor="middle" class="d-lbl-acc">USB · 90 Ω</text>
+        </svg>
+        </div>
+        <figcaption><b>Two rails that never share noise.</b> Servos get their own 5 A buck so motor and servo transients stay off the logic supply. The logic buck runs at 5.4 V so that, after the Schottky OR with USB power, the logic rail still sits near 5 V; a separate low-noise LDO feeds only the sensors.</figcaption>
+      </figure>
+
+      <div class="spec-grid">
+        <figure class="diagram" style="margin-top:0">
+          <svg viewBox="0 0 470 214" role="img" aria-label="Six-layer cross-section: L1 signal and power pours in 2 ounce copper, L2 solid ground plane, L3 inner signal layer, L4 power islands, L5 ground pour with a few signals, L6 signal and power in 2 ounce copper.">
+            <rect x="10" y="10" width="220" height="16" class="d-hi"/><text x="242" y="22" class="d-lbl">L1 · signal + pours · 2 oz</text>
+            <rect x="10" y="30" width="220" height="8" class="d-fill-muted" opacity=".25"/><text x="242" y="38" class="d-sub">0.12 mm prepreg</text>
+            <rect x="10" y="42" width="220" height="16" class="d-box"/><text x="242" y="54" class="d-lbl">L2 · solid GND plane</text>
+            <rect x="10" y="62" width="220" height="14" class="d-fill-muted" opacity=".25"/>
+            <rect x="10" y="80" width="220" height="16" class="d-hi"/><text x="242" y="92" class="d-lbl">L3 · inner signal</text>
+            <rect x="10" y="100" width="220" height="22" class="d-fill-muted" opacity=".25"/>
+            <rect x="10" y="126" width="220" height="16" class="d-box"/><text x="242" y="138" class="d-lbl">L4 · 7 power islands</text>
+            <rect x="10" y="146" width="220" height="14" class="d-fill-muted" opacity=".25"/>
+            <rect x="10" y="164" width="220" height="16" class="d-box"/><text x="242" y="176" class="d-lbl">L5 · GND pour + long buses</text>
+            <rect x="10" y="184" width="220" height="8" class="d-fill-muted" opacity=".25"/>
+            <rect x="10" y="196" width="220" height="16" class="d-hi"/><text x="242" y="208" class="d-lbl">L6 · signal + pours · 2 oz</text>
+          </svg>
+          <figcaption><b>1.6 mm stack-up.</b> Every signal layer sits next to a plane. L2 stays unbroken as the reference for L1 and the USB pair.</figcaption>
+        </figure>
+        <div>
+          <h3 style="margin-top:0">What it gives the aircraft</h3>
+          <ul class="points">
+            <li><b>Stable attitude control.</b> Two IMUs on SPI give redundant gyro and accelerometer data; the main IMU sits in an isolated, low-noise zone at the board centre, away from the regulators.</li>
+            <li><b>Altitude hold.</b> A DPS310 barometer gives the pressure altitude needed for climb, hold and descent.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pair" style="margin-top:14px">
+        <ul class="points" style="align-content:start">
+          <li><b>Control surfaces and motor.</b> Eight servo/ESC outputs run from a dedicated 5 V / 5 A rail, so servo current spikes cannot brown out the flight computer.</li>
+          <li><b>Battery awareness and failsafe.</b> The INA226 measures pack voltage and current in flight, so the firmware can track used capacity and trigger low-battery return or landing.</li>
+          <li><b>Navigation and links.</b> Dedicated ports for GPS, telemetry radio, RC receiver and an I²C expansion bus, plus ESP32-S3 Wi-Fi/BLE for ground-side setup.</li>
+        </ul>
+        <ul class="points" style="align-content:start">
+          <li><b>Vibration-proof logging.</b> 4 GB of soldered SD NAND records every flight, with no card to shake loose in a hard landing.</li>
+          <li><b>Safe on the bench and in the field.</b> The logic rail runs from USB-C alone for configuration without the battery; ESD protection on every external connector, a safety switch, buzzer and status LED.</li>
+        </ul>
+      </div>
+
+      <h3>Copper, layer by layer</h3>
+      <div class="gallery">
+        <figure class="shot wide"><button type="button" data-full="fc6-top.png" data-cap="Top copper and silkscreen: servo header block on the left, sensor block between the mounting holes (ICM-42688-P main IMU at the centre, BMI270 backup IMU and DPS310 barometer), XT60 power entry and servo buck in the middle, ESP32-S3 module on the right with its antenna past the board edge."><img src="fc6-top.png" alt="Top copper layer of the 6-layer flight controller" class="contain"></button><figcaption>Top side (L1): servo block, sensor block (2 × IMU + barometer), power entry and ESP32-S3.</figcaption></figure>
+        <figure class="shot"><button type="button" data-full="fc6-bottom.png" data-cap="Bottom copper and silkscreen, mirrored as seen from below: logic buck along the top edge, ESD arrays, SD NAND and power monitor."><img style="aspect-ratio:auto" src="fc6-bottom.png" alt="Bottom copper layer" class="contain"></button><figcaption>Bottom side (L6), seen from below.</figcaption></figure>
+        <figure class="shot"><button type="button" data-full="fc6-l3.png" data-cap="L3 inner signal layer: long ESP32-to-sensor buses at 0.125 mm between the L2 ground plane and the L4 power layer."><img style="aspect-ratio:auto" src="fc6-l3.png" alt="Inner signal layer L3" class="contain"></button><figcaption>L3, inner signal layer.</figcaption></figure>
+        <figure class="shot"><button type="button" data-full="fc6-l5.png" data-cap="L5 ground pour with the long SPI and I²C buses that cross the power block; no tracks under the switching nodes."><img style="aspect-ratio:auto" src="fc6-l5.png" alt="L5 ground layer with routed buses" class="contain"></button><figcaption>L5, ground pour with the long buses.</figcaption></figure>
+      </div>
+      <ul class="tags"><li>6-layer PCB in KiCad</li><li>Controlled-impedance stack-up</li><li>Multi-rail power architecture</li><li>Buck converter design</li><li>EMI-aware layout</li><li>90 Ω USB differential routing</li><li>Low-noise IMU zone</li><li>Python-scripted routing (pcbnew)</li><li>DRC-driven verification</li></ul>
+    </article>
+
+    <!-- ================= P3 BLDC ================= -->
     <article class="case" id="bldc">
-      <div class="eyebrow"><span class="dom">P2 · Power electronics · Embedded</span><span>ULUTOGAN Fixed-Wing UAV · TEKNOFEST 2025</span></div>
+      <div class="eyebrow"><span class="dom">P3 · Power electronics · Embedded</span><span>ULUTOGAN Fixed-Wing UAV · TEKNOFEST 2025</span></div>
       <h2>24 V / 60 A sensorless BLDC motor driver</h2>
       <p class="lede">A custom driver for the team’s fixed-wing UAV propulsion motor. It commutates a brushless motor without Hall sensors by reading the back-EMF of the undriven phase, and it went from breadboard to a fabricated, hand-assembled board.</p>
 
@@ -769,9 +895,9 @@ ol.seq code { color: var(--accent); }
       <ul class="tags"><li>KiCad</li><li>3-phase inverter</li><li>Gate drivers</li><li>Sensorless BEMF</li><li>6-step commutation</li><li>EMI/EMC layout</li><li>AVR firmware</li><li>Oscilloscope bring-up</li></ul>
     </article>
 
-    <!-- ================= P3 FCC ================= -->
+    <!-- ================= P4 FCC ================= -->
     <article class="case" id="fcc">
-      <div class="eyebrow"><span class="dom">P3 · Embedded · PCB</span><span>SANCAR Rocket Team · TEKNOFEST 2025 Rocket Competition</span></div>
+      <div class="eyebrow"><span class="dom">P4 · Embedded · PCB</span><span>SANCAR Rocket Team · TEKNOFEST 2025 Rocket Competition</span></div>
       <h2>ESP32 flight control computer with LoRa telemetry</h2>
       <p class="lede">An original flight computer that fuses GPS, inertial and barometric data in real time, sends it to the ground station over a long-range LoRa link, and keeps a full copy on a microSD card in case the link drops.</p>
 
@@ -841,9 +967,9 @@ ol.seq code { color: var(--accent); }
     </article>
 
 
-    <!-- ================= P4 LCD driver ================= -->
+    <!-- ================= P5 LCD driver ================= -->
     <article class="case" id="lcd">
-      <div class="eyebrow"><span class="dom">P4 · Embedded · Driver development</span><span>RİTOS Elektronik internship · Boardoza M032 kit · 2025</span></div>
+      <div class="eyebrow"><span class="dom">P5 · Embedded · Driver development</span><span>RİTOS Elektronik internship · Boardoza M032 kit · 2025</span></div>
       <h2>PCF8574 I²C driver library for a 16×2 character LCD</h2>
       <p class="lede">A reusable C driver that runs an HD44780-compatible 16×2 LCD through a PCF8574 I²C port expander on a Nuvoton M032 board. The display hangs off the shared two-wire bus instead of taking a parallel port, which frees GPIO for the rest of the application.</p>
 
@@ -959,9 +1085,9 @@ ol.seq code { color: var(--accent); }
       <ul class="tags"><li>C</li><li>Nuvoton M032</li><li>Arm Cortex-M0</li><li>I²C</li><li>PCF8574</li><li>HD44780</li><li>Driver API design</li><li>Boardoza kit</li></ul>
     </article>
 
-    <!-- ================= P5 SDR ================= -->
+    <!-- ================= P6 SDR ================= -->
     <article class="case" id="sdr">
-      <div class="eyebrow"><span class="dom">P5 · RF measurement · Data analysis</span><span>TÜBİTAK 2209-A supported graduation project · 2024–2025</span></div>
+      <div class="eyebrow"><span class="dom">P6 · RF measurement · Data analysis</span><span>TÜBİTAK 2209-A supported graduation project · 2024–2025</span></div>
       <h2>UAV-mounted PlutoSDR for 5G-band interference mapping</h2>
       <p class="lede">A flying spectrum probe: a PlutoSDR and antenna ride on a UAV, every RSSI sample is tied to a GPS fix, and a Python pipeline turns the log into a geo-referenced heat map of where interference concentrates.</p>
 
@@ -1019,9 +1145,9 @@ ol.seq code { color: var(--accent); }
       <ul class="tags"><li>PlutoSDR</li><li>RSSI</li><li>GPS synchronization</li><li>Python</li><li>Geospatial heat maps</li><li>5G interference</li><li>UAV integration</li></ul>
     </article>
 
-    <!-- ================= P6 RF drive test ================= -->
+    <!-- ================= P7 RF drive test ================= -->
     <article class="case" id="rfdt">
-      <div class="eyebrow"><span class="dom">P6 · RF propagation · Tools</span><span>ONS Group A.Ş. · RF Drive Test Engineer · 09.2025 – 12.2025</span></div>
+      <div class="eyebrow"><span class="dom">P7 · RF propagation · Tools</span><span>ONS Group A.Ş. · RF Drive Test Engineer · 09.2025 – 12.2025</span></div>
       <h2>Drive-test data to a calibrated propagation model</h2>
       <p class="lede">Field measurements from cellular drive tests (RSSI, RSRP, RSRQ, SNR) were used to fit a Motley–Keenan path-loss model per environment, then wrapped in a calculator so planners can predict coverage without re-deriving the parameters.</p>
 
@@ -1058,9 +1184,9 @@ ol.seq code { color: var(--accent); }
       <ul class="tags"><li>Drive test</li><li>LTE KPIs</li><li>Path-loss modeling</li><li>Parameter fitting</li><li>Coverage prediction</li><li>Tool development</li></ul>
     </article>
 
-    <!-- ================= P7 POWER ================= -->
+    <!-- ================= P8 POWER ================= -->
     <article class="case" id="power">
-      <div class="eyebrow"><span class="dom">P7 · Power electronics</span><span>RİTOS Elektronik · Hardware design internship · 2025</span></div>
+      <div class="eyebrow"><span class="dom">P8 · Power electronics</span><span>RİTOS Elektronik · Hardware design internship · 2025</span></div>
       <h2>Power conversion prototypes</h2>
       <p class="lede">Two boards from my hardware design internship: a regulated 3.3 V supply laid out on four layers, and a low-voltage induction heater characterized under load.</p>
 
@@ -1115,7 +1241,7 @@ ol.seq code { color: var(--accent); }
       <div class="sec-head"><h2 id="exp-h">Experience</h2></div>
       <ol class="timeline">
         <li><div class="when">06.2026 – 09.2026</div><div><h3>Candidate EWIS Design Engineer</h3><div class="org">BAYKAR · Wiring &amp; Ground Systems</div><p>Worked on design, production and test requirements for aerospace wiring under IPC/WHMA-A-620, MIL-W-5088 and MIL-STD-810: UAV harness/bundle design, routing, bend radius, shielding and grounding; circular and hermetic connector and terminus selection; fiber-optic cable production, harness design, termination and opto-mechanical tests.</p></div></li>
-        <li><div class="when">09.2025 – 12.2025</div><div><h3>RF Drive Test Engineer</h3><div class="org">ONS Group A.Ş.</div><p>Collected and analyzed RSSI, RSRP, RSRQ and SNR with field measurement systems and mobile devices to evaluate cellular coverage and propagation. Calibrated a Motley–Keenan path-loss model against the field data per environment type and built a coverage calculation tool on top of it (<a href="#rfdt">P6</a>).</p></div></li>
+        <li><div class="when">09.2025 – 12.2025</div><div><h3>RF Drive Test Engineer</h3><div class="org">ONS Group A.Ş.</div><p>Collected and analyzed RSSI, RSRP, RSRQ and SNR with field measurement systems and mobile devices to evaluate cellular coverage and propagation. Calibrated a Motley–Keenan path-loss model against the field data per environment type and built a coverage calculation tool on top of it (<a href="#rfdt">P7</a>).</p></div></li>
         <li><div class="when">03.2025 – 06.2025</div><div><h3>Hardware Design &amp; Embedded Software Intern</h3><div class="org">RİTOS Elektronik · Bursa</div><p>4-layer LT1618 buck converter, induction heater, 4th/6th-order Butterworth band-pass filters, an ESP32 real-time FFT spectrum interface for 0–5 kHz audio, board testing on ESP32 and Nuvoton platforms, and a PCF8574 I²C driver library for a 16×2 LCD.</p></div></li>
         <li><div class="when">11.2023 – 03.2025</div><div><h3>Laboratory Assistant</h3><div class="org">Bursa Uludağ University</div><p>PCB lab: etching, stencil paste printing, component placement and reflow, plus test and quality control. Circuits lab: guided students through op-amp, RC/RL/RLC, two-port and Thevenin–Norton experiments with oscilloscope and signal generator.</p></div></li>
         <li><div class="when">07.2024 – 08.2024</div><div><h3>RF Planning &amp; Optimization Intern</h3><div class="org">Türk Telekom Mobile Operations · Bursa</div><p>RF, transmission and OMC units; field work on mobile network and transmission infrastructure.</p></div></li>
@@ -1129,8 +1255,8 @@ ol.seq code { color: var(--accent); }
       <div class="teams">
         <div class="teams-text">
           <ol class="tlist">
-            <li><span class="yr">2025</span><div><b>ULUTOGAN UAV</b> · Electronics team lead<span>TEKNOFEST · reached the mission-video stage · designed the BLDC motor driver (<a href="#bldc">P2</a>)</span></div></li>
-            <li><span class="yr">2025</span><div><b>SANCAR Rocket</b> · Electronics team member<span>TEKNOFEST · technical report stage · flight computer (<a href="#fcc">P3</a>)</span></div></li>
+            <li><span class="yr">2025</span><div><b>ULUTOGAN UAV</b> · Electronics team lead<span>TEKNOFEST · reached the mission-video stage · designed the BLDC motor driver (<a href="#bldc">P3</a>)</span></div></li>
+            <li><span class="yr">2025</span><div><b>SANCAR Rocket</b> · Electronics team member<span>TEKNOFEST · technical report stage · flight computer (<a href="#fcc">P4</a>)</span></div></li>
             <li><span class="yr">2024</span><div><b>ULUTOGAN UAV</b> · Team captain<span>TEKNOFEST · technical report stage</span></div></li>
             <li><span class="yr">2023</span><div><b>AKABAY UAV</b> · Electronics team member<span>TEKNOFEST · technical report stage</span></div></li>
             <li><span class="yr">2023–25</span><div><b>Young Engineers Society</b> · Vice president, TEKNOFEST teams coordinator<span>Board member the year before</span></div></li>
@@ -1166,7 +1292,7 @@ ol.seq code { color: var(--accent); }
       </div>
       <dl class="skills panel" style="margin-top:20px">
         <div><dt>Digital design</dt><dd>Verilog, RTL design, FSMs, testbenches, Verilator, GTKWave, Yosys, OpenLANE (synthesis, place &amp; route, GDSII), FPGA</dd></div>
-        <div><dt>Hardware</dt><dd>Altium Designer, KiCad, Eagle, LTspice · multilayer PCB, DC-DC converters, motor drivers, active filters</dd></div>
+        <div><dt>Hardware</dt><dd>Altium Designer, KiCad, Eagle, LTspice · 4- and 6-layer PCB, stack-up and impedance planning, DC-DC converters, motor drivers, active filters · KiCad scripting with Python (pcbnew)</dd></div>
         <div><dt>Embedded</dt><dd>C, Assembly, register-level ARM (Nuvoton), ESP32, FreeRTOS · UART, I²C, SPI, CAN, RS-232/485, LoRa</dd></div>
         <div><dt>RF &amp; analysis</dt><dd>SDR (PlutoSDR), drive testing, propagation modeling, Python, MATLAB/Simulink</dd></div>
         <div><dt>Standards</dt><dd>IPC/WHMA-A-620, MIL-W-5088, MIL-STD-810</dd></div>
@@ -1493,5 +1619,4 @@ ol.seq code { color: var(--accent); }
 })();
 </script>
 
-</body>
-</html>
+</body></html>
